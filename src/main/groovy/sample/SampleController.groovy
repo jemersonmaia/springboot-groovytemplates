@@ -23,7 +23,7 @@ import org.springframework.web.servlet.ModelAndView
 @Controller
 class SampleController   {
 
-    @RequestMapping("/")
+    @RequestMapping("/ ")
     def home() {
         new ModelAndView("views/home",[bootVersion: Banner.package.implementationVersion, groovyVersion: GroovySystem.version])
     }
