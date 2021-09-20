@@ -3,7 +3,7 @@ name: codenarc
 on:
   pull_request:
     branches:
-      - release
+      - push
     paths:
       - '**.groovy'
 
