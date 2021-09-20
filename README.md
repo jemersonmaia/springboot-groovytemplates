@@ -10,3 +10,4 @@ cd springboot-groovytemplates
 ```
 
 Explanations can be found on this [blog post](https://spring.io/blog/2014/05/28/using-the-innovative-groovy-template-engine-in-spring-boot).
+
