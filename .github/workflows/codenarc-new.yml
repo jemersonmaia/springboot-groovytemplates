@@ -23,6 +23,5 @@ jobs:
         uses: jemersonmaia/codenarc-action@master
         with:
           github_token: ${{ secrets.github_token }}
-          report: json:stdout
           reporter: github-pr-review
           rulesetfiles: 'file:codenarcrules.xml' # Separar por vírgula e para arquivos dentro do projeto utilizar o prefixo file:
