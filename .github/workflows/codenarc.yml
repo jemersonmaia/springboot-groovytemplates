@@ -1,11 +1,11 @@
 name: codenarc
 
 on:
-  pull_request:
+  push:
     branches:
-      - push
+      - master
     paths:
-      - '**.groovy'
+    - '**.groovy'
 
 jobs:
   codenarc:
