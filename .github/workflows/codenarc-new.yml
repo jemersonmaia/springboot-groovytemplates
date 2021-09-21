@@ -32,15 +32,15 @@ jobs:
       - name: Run codenarc 2
         uses: jemersonmaia/codenarc-action@master
         with:
-        github_token: ${{ secrets.github_token }}
-        reporter: github-pr-review
-        report: json:stdout
-        rulesetfiles: 'file:codenarcrules.xml'
+          github_token: ${{ secrets.github_token }}
+          reporter: github-pr-review
+          report: json:stdout
+          rulesetfiles: 'file:codenarcrules.xml'
 
       - name: Run codenarc 3
         uses: jemersonmaia/codenarc-action@master
         with:
-        github_token: ${{ secrets.github_token }}
-        reporter: github-pr-review
-        report: text:stdout
-        rulesetfiles: 'file:codenarcrules.xml' # Separar por vírgula e para arquivos dentro do projeto utilizar o prefixo file:
+          github_token: ${{ secrets.github_token }}
+          reporter: github-pr-review
+          report: text:stdout
+          rulesetfiles: 'file:codenarcrules.xml' # Separar por vírgula e para arquivos dentro do projeto utilizar o prefixo file:
