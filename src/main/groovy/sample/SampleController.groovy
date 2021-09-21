@@ -28,7 +28,7 @@ class SampleController   {
         new ModelAndView("views/home",[bootVersion: Banner.package.implementationVersion, groovyVersion: GroovySystem.version])
     }
 
-    def teste() {
+    def teste2() {
 
     }
 
