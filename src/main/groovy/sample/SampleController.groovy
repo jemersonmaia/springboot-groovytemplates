@@ -39,4 +39,8 @@ class SampleController   {
     def teste4() {
         
     }
+
+    def teste5() {
+        
+    }
 }
