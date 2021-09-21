@@ -51,4 +51,10 @@ jobs:
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review
           report: compact:stdout
-          rulesetfiles: 'file:codenarcrules.xml' # Separar por vírgula e para arquivos dentro do projeto utilizar o prefixo file:
+          rulesetfiles: 'file:codenarcrules.xml' 
+      - name: Run codenarc
+        uses: asaasdev/codenarc-action@codenarc_2_2_0_official
+        with:
+          github_token: ${{ secrets.github_token }}
+          reporter: github-pr-review
+          rulesetfiles: 'file:codenarcrules.xml'
