@@ -32,7 +32,7 @@ class SampleController   {
 
     }
 
-    def teste2() {
+    def teste3() {
         
     }
 }
