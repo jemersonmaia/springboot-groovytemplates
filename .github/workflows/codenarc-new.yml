@@ -29,31 +29,8 @@ jobs:
           reporter: github-pr-review
           rulesetfiles: 'file:codenarcrules.xml'
           
-      - name: Run codenarc 2
-        uses: jemersonmaia/codenarc-action@master
-        with:
-          github_token: ${{ secrets.github_token }}
-          reporter: github-pr-review
-          report: json:stdout
-          rulesetfiles: 'file:codenarcrules.xml'
-
-      - name: Run codenarc 3
-        uses: jemersonmaia/codenarc-action@master
-        with:
-          github_token: ${{ secrets.github_token }}
-          reporter: github-pr-review
-          report: text:stdout
-          rulesetfiles: 'file:codenarcrules.xml'
-          
-      - name: Run codenarc 4
-        uses: jemersonmaia/codenarc-action@master
-        with:
-          github_token: ${{ secrets.github_token }}
-          reporter: github-pr-review
-          report: compact:stdout
-          rulesetfiles: 'file:codenarcrules.xml' 
       - name: Run codenarc
-        uses: asaasdev/codenarc-action@codenarc_2_2_0_official
+        uses: asaasdev/codenarc-action@v2.0.0
         with:
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review
