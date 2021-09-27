@@ -30,7 +30,7 @@ jobs:
           rulesetfiles: 'file:codenarcrules.xml'
           
       - name: Run codenarc
-        uses: asaasdev/codenarc-action@v2
+        uses: asaasdev/codenarc-action@utilizando_asaasdev_codenarc_novo
         with:
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review
