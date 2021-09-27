@@ -52,7 +52,7 @@ class SampleController   {
         
     }
 
-    def teste7() {
+    def teste8() {
         
     }
 }
