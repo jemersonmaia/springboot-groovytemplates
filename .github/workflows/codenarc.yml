@@ -23,7 +23,7 @@ jobs:
           fetch-depth: 0
 
       - name: Run codenarc
-        uses: asaasdev/codenarc-action@v1.4.0
+        uses: asaasdev/codenarc-action@master
         with:
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review
