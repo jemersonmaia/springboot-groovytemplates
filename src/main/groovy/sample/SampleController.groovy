@@ -21,9 +21,42 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.servlet.ModelAndView
 
 @Controller
-class SampleController {
-    @RequestMapping("/")
+class SampleController   {
+
+    @RequestMapping("/ ")
     def home() {
         new ModelAndView("views/home",[bootVersion: Banner.package.implementationVersion, groovyVersion: GroovySystem.version])
+    }
+
+    def teste2() {
+
+    }
+
+    def teste3() {
+        
+    }
+
+    def teste4() {
+        
+    }
+
+    def teste5() {
+        
+    }
+
+    def teste6() {
+        
+    }
+
+    def teste7() {
+        
+    }
+
+    def teste8() {
+        
+    }
+
+    def teste9() {
+        
     }
 }
