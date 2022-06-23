@@ -1,0 +1,21 @@
+name: Merge Master To Release When Hotfix Merged
+
+on:
+  pull_request:
+    branches: [master]
+    types: [closed]
+
+jobs:
+  merge:
+    if: github.event.pull_request.merged == true && contains(github.event.pull_request.labels.*.name, 'hotfix')
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        ref: 'release'
+
+    - name: Merge Master To Release
+      run: |
+        git fetch origin master
+        git merge --no-edit origin/master
+        git push origin release
